@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus SnackPass</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🍴 <span>Campus SnackPass</span>
+        </div>
+
+        <div class="cart-count">
+            🛒 <span id="cartCount">0</span> items
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-tag">
+                CAMPUS CANTEEN • QUICK • FRESH • EASY
+            </p>
+
+            <h1>
+                Hungry Between Lectures?
+                <span>We've Got You Covered.</span>
+            </h1>
+
+            <p class="hero-description">
+                Browse your campus favourites, place your order in seconds,
+                and collect it without standing in a long queue.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= MENU ================= -->
+
+        <section class="menu-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="small-heading">TODAY'S PICKS</p>
+                    <h2>Explore the Menu</h2>
+                </div>
+
+                <p class="menu-note">
+                    100% Vegetarian
+                </p>
+
+            </div>
+
+
+            <!-- CATEGORY FILTERS -->
+
+            <div class="filters">
+
+                <button class="filter-btn active" data-category="All">
+                    All
+                </button>
+
+                <button class="filter-btn" data-category="Snacks">
+                    Snacks
+                </button>
+
+                <button class="filter-btn" data-category="Chaat">
+                    Chaat
+                </button>
+
+                <button class="filter-btn" data-category="Maggi">
+                    Maggi & Quick Bites
+                </button>
+
+                <button class="filter-btn" data-category="Pizza">
+                    Pizza
+                </button>
+
+                <button class="filter-btn" data-category="Meals">
+                    Meals
+                </button>
+
+                <button class="filter-btn" data-category="Tea & Coffee">
+                    Tea & Coffee
+                </button>
+
+                <button class="filter-btn" data-category="Drinks">
+                    Cold Drinks
+                </button>
+
+                <button class="filter-btn" data-category="Desserts">
+                    Desserts
+                </button>
+
+            </div>
+
+
+
+            <!-- MENU ITEMS -->
+
+            <div class="menu-grid" id="menuGrid">
+
+                <!-- JavaScript will insert food cards here -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CART ================= -->
+
+        <aside class="cart">
+
+            <div class="cart-heading">
+
+                <div>
+                    <p class="small-heading">YOUR SELECTION</p>
+                    <h2>Your Order</h2>
+                </div>
+
+                <span class="live-badge">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div id="cartItems">
+
+                <p class="empty-cart">
+
+                    <span>🍽️</span>
+
+                    Your order is empty.
+
+                    <small>
+                        Pick something delicious from the menu.
+                    </small>
+
+                </p>
+
+            </div>
+
+
+            <div class="cart-footer">
+
+                <div class="total">
+
+                    <span>Total</span>
+
+                    <span id="totalPrice">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <button id="confirmBtn">
+                    Confirm Order
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- ================= ORDER MODAL ================= -->
+
+    <div class="modal" id="orderModal">
+
+        <div class="modal-content">
+
+
+            <button
+                class="close-btn"
+                id="closeModal">
+                ×
+            </button>
+
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <p class="modal-tag">
+                ORDER PLACED SUCCESSFULLY
+            </p>
+
+
+            <h2>
+                You're All Set!
+            </h2>
+
+
+            <p class="modal-description">
+                Your order has been sent to the canteen.
+            </p>
+
+
+            <p class="token-label">
+                YOUR ORDER TOKEN
+            </p>
+
+
+            <div class="token" id="orderToken">
+                SNK-0000
+            </div>
+
+
+            <p class="token-message">
+                Keep this token handy and show it at the
+                collection counter when your order is ready.
+            </p>
+
+
+            <button id="newOrderBtn">
+                Start New Order
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
